@@ -41,12 +41,11 @@ export default function HomePage() {
           <Image
             src="/stevedidit-logo.jpeg"
             alt="SteveDidIt logo"
-            width={46}
-            height={46}
+            width={120}
+            height={120}
             className={styles.brandLogo}
             priority
           />
-          <span className={styles.brandText}>SteveDidIt Philanthropy</span>
         </Link>
         <nav className={styles.siteNav}>
           <a className={styles.navLink} href="#impact">

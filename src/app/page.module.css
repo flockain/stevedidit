@@ -49,41 +49,33 @@
 .brandLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.65);
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 0.4rem 0.6rem;
+  border-radius: 20px;
+  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.3);
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .brandLink:focus-visible {
   outline: 2px solid rgba(250, 204, 21, 0.65);
   outline-offset: 4px;
-  border-radius: 999px;
+  border-radius: 20px;
 }
 
 .brandLink:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   border-color: rgba(250, 204, 21, 0.55);
-  box-shadow: 0 14px 28px rgba(250, 204, 21, 0.18);
+  box-shadow: 0 18px 34px rgba(250, 204, 21, 0.22);
 }
 
 .brandLogo {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
+  width: clamp(90px, 12vw, 140px);
+  height: clamp(90px, 12vw, 140px);
+  border-radius: 20px;
   object-fit: cover;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 8px 14px rgba(8, 47, 73, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 24px 48px rgba(8, 47, 73, 0.45);
   background: rgba(15, 23, 42, 0.55);
-}
-
-.brandText {
-  font-family: var(--font-archivo), 'Archivo Black', system-ui;
-  font-size: 0.9rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
 }
 
 .hero {
