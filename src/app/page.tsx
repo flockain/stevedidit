@@ -39,7 +39,7 @@ export default function HomePage() {
       <header className={`${styles.siteHeader} container`}>
         <Link href="#top" className={styles.brandLink}>
           <Image
-            src="/stevedidit-logo.jpeg"
+            src="/stevedidit-logo.png"
             alt="SteveDidIt logo"
             width={120}
             height={120}
