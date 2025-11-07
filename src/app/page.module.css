@@ -49,12 +49,41 @@
 .brandLink {
   display: inline-flex;
   align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.25s ease;
 }
 
 .brandLink:focus-visible {
   outline: 2px solid rgba(250, 204, 21, 0.65);
   outline-offset: 4px;
   border-radius: 999px;
+}
+
+.brandLink:hover {
+  transform: translateY(-1px);
+  border-color: rgba(250, 204, 21, 0.55);
+  box-shadow: 0 14px 28px rgba(250, 204, 21, 0.18);
+}
+
+.brandLogo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 14px rgba(8, 47, 73, 0.28);
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.brandText {
+  font-family: var(--font-archivo), 'Archivo Black', system-ui;
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .hero {

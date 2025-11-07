@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, PlayCircle } from 'lucide-react';
 import styles from './page.module.css';
@@ -37,7 +38,15 @@ export default function HomePage() {
     <main>
       <header className={`${styles.siteHeader} container`}>
         <Link href="#top" className={styles.brandLink}>
-          <span className="badge">SteveDidIt Philanthropy</span>
+          <Image
+            src="/stevedidit-logo.jpeg"
+            alt="SteveDidIt logo"
+            width={46}
+            height={46}
+            className={styles.brandLogo}
+            priority
+          />
+          <span className={styles.brandText}>SteveDidIt Philanthropy</span>
         </Link>
         <nav className={styles.siteNav}>
           <a className={styles.navLink} href="#impact">
