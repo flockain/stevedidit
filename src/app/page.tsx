@@ -36,9 +36,9 @@ export default function HomePage() {
   return (
     <main>
       <header className={`${styles.siteHeader} container`}>
-        <div>
+        <Link href="#top" className={styles.brandLink}>
           <span className="badge">SteveDidIt Philanthropy</span>
-        </div>
+        </Link>
         <nav className={styles.siteNav}>
           <a className={styles.navLink} href="#impact">
             Impact
@@ -55,7 +55,7 @@ export default function HomePage() {
         </nav>
       </header>
 
-      <section className={`${styles.hero}`}>
+      <section id="top" className={`${styles.hero}`}>
         <div className="container">
           <div className={styles.heroInner}>
             <div>
