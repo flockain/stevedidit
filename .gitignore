@@ -10,3 +10,5 @@ pnpm-debug.log*
 *.local
 .vercel
 coverage
+
+.venv
