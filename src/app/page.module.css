@@ -1,24 +1,25 @@
 .siteHeader {
-  padding: 1.5rem 0 0.5rem;
+  padding: 1.25rem 0 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
   position: sticky;
   top: 0;
   z-index: 50;
-  backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(8px) saturate(130%);
   border-bottom: none;
-  background: linear-gradient(180deg, rgba(5, 7, 14, 0.82), rgba(5, 7, 14, 0.55), rgba(5, 7, 14, 0));
+  background: linear-gradient(180deg, rgba(5, 7, 14, 0), rgba(5, 7, 14, 0), rgba(5, 7, 14, 0));
 }
 
 .siteNav {
   display: flex;
   gap: 1.4rem;
-  align-items: center;
+  align-items: flex-start;
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  padding-top: 0.6rem;
 }
 
 .navLink {
